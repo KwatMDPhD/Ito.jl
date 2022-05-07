@@ -1,15 +1,15 @@
 # ================================================================================================
 # Cell, Protein >> Phenotype
-#
+
 [HSC, IL3] * Proliferation
 
 [HSC, IL5] * Eosinophil
 
+[EpithelialCell, IFNg] * Apoptosis
+
+[Neutrophil, C3a] * Migration
+
 [Neutrophil, C5a] * Migration
-
-[CXCR1, IL8] * Migration
-
-[CXCR2, IL8] * Migration
 
 [Neutrophil, PECAM1] * Transmigration
 
@@ -29,6 +29,8 @@
 
 [Basophil, C5a] * Migration
 
+[Macrophage, C3a] * Migration
+
 [Macrophage, C5a] * Migration
 
 [Macrophage, CD40Cascasde] * Phagocytosis
@@ -36,6 +38,8 @@
 Macrophage * T4H
 
 ActivatedMacrophage * Granuloma
+
+[TCell, FasRCascade] * Apoptosis
 
 [CD8T, PD1Cascade] * Apoptosis
 
@@ -61,10 +65,22 @@ TumorCell * [CTLA4, IL10]
 
 [Keratinocyte, IL22] * Proliferation
 
+[Phagocyte, C3b] * Phagocytosis
+
+[Phagocyte, FCRCascade] * Phagocytosis
+
 # ================================================================================================
 # Protein >> Phenotype
 
+[CXCR1, IL8] * Migration
+
+[CXCR2, IL8] * Migration
+
 Histamine * [VascularPermeability, T1H]
+
+C3a * Vasodilation
+
+C5a * Vasodilation
 
 Bradykinin * [VascularPermeability, Vasodilation, BronchialConstriction, Pain]
 
@@ -94,7 +110,6 @@ IgG * T2H
 
 IgComplex * T3H
 
-
 # ================================================================================================
 # Cell, Protein >> Cell
 
@@ -106,7 +121,7 @@ IgComplex * T3H
 
 [Th0, IL23] * Th1
 
-[Th0, IL23] * Th17
+[Th0, IL23, IL1, IL6] * Th17
 
 [Macrophage, IFNg] * ActivatedMacrophage
 
@@ -120,7 +135,7 @@ IgComplex * T3H
 
 [BCell, IL5, IL13] * PlasmaCell
 
-[PlasmaCell, CD40Cascasde] * MemoryB
+[PlasmaCell, CD40Cascasde, IL2, IL4, IL5, IL6, IFNg] * MemoryB
 
 # ================================================================================================
 # Cell, Protein >> Protein
@@ -155,7 +170,7 @@ NaturalKiller * [Perforin, Granzyme]
 
 [Macrophage, CD40Cascasde] * [CD80, CD86, MHC2]
 
-[MastCell, IgERCascade] * [Histamine, Tryptase, ArachidonicAcid]
+[MastCell, IgEFCRCascade] * [Histamine, Tryptase, ArachidonicAcid]
 
 [MastCell, C3a] * Histamine
 
@@ -180,24 +195,41 @@ Neutrophil * Elastase
 
 Eosinophil * MajorBasicProtein
 
+MastCell * IL5
+
 Macrophage * [IL8, IL12, IL23, IFNg, TNFa, TGFb, Elastase]
 
-NaturalKiller * IL2
+NaturalKiller * [IL2, TNFa]
+
+TCell * FasL
 
 CD8T * [IL2, IL3]
 
-Th1 * [IL1, IL2, IL3, TNFa, IFNg]
+Th1 * [IL1, IL2, IL3, TNFa, IFNg, LymphotoxinBeta]
 
-Th2 * [IL3, IL4, IL5, IL13]
+Th2 * [IL3, IL4, IL5, IL10, IL13]
 
 Th17 * [IL17, IL22]
 
+TReg * [TGFb, IL10]
+
 PlasmaCell * IgM
+
 
 # ================================================================================================
 # Protein >> Protein
 
-[C3, FC] * [C3a, C3b]
+[Lectin] * C1ComplexLike
+
+[C1, IgMFC] * C1Complex
+
+[C1, IgGFC] * C1Complex
+
+[C1Complex, C2, C4] * C3Convertase
+
+[C1ComplexLike, C2, C4] * C3Convertase
+
+[C3, C3Convertase] * [C3a, C3b]
 
 [MHC1, CytoplasmAntigen] * MHC1Antigen
 
@@ -215,7 +247,7 @@ PlasmaCell * IgM
 
 [FCR, FC] * FCRCascade
 
-IL10 * "Decrease" * [IFNg, IL2, IL3, TNFa]
+IL10 * "Decrease" * [IFNg, IL2, IL3, TNFa, Macrophage, DendriticCell, MHC2]
 
 TGFb * "Decrease" * [IL1, TNFa]
 
@@ -229,7 +261,7 @@ IgM * IgComplex
 
 IgG * IgComplex
 
-[IgER, IgE, Antigen] * IgERCascade
+[IgEFCR, IgE, Antigen] * IgEFCRCascade
 
 IFNg * [MHC1, MHC2]
 
@@ -237,7 +269,11 @@ IFNg * [MHC1, MHC2]
 
 [C3b, CR1] * ExtravascularHemolysis
 
+[C5, C3b] * [C5a, C5b]
+
 [C5b, Bacterium] * OpsonizationComplex
+
+C5b * C5Cascade
 
 [C5Cascade, Pathogen] * MembraneAttackComplex
 
@@ -260,3 +296,5 @@ _5HPETE * [LipoxinA4, LipoxinB4]
 _5HPETE * _5HETE
 
 ArachidonicAcid * [LtB4, LtC4, LtD4, LtE4]
+
+[FasR, FasL] * FasRCascade

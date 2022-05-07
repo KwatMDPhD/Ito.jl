@@ -2,155 +2,6 @@
 
 :spider_web:
 
-## Th0
-
-Th1 ^ (IL2, IFg, LymphotoxinBeta)
-
-Th2 ^ (IL4, IL5, IL10, IL13)
-
-Macrophage IL12 >> Th0 = Th1 >> $ ^ IFg >> $ ^ CD8 & Mac
-
-FasL @ FasR >> FasR trimerization >> DeathDomain ^ (Caspase 8 & 10) >> ^ (Caspase 3 & 6) $ ^ >> Apoptosis
-
-FasR.DeathDomain
-
-T.FasR
-T ^ FasL
-T cells become increasing more sensitive to Fas signaling as mature
-
-## Which Th?
-
-IL12 IFg >> Th1
-IL4 >> Th2
-
-## Complement
-
-Alternative pathway >> C3
-
-Classical pathway (IgG @ C1 complex) | Lectin (mannose) pathway C1-like complex >> $ + (C2 & C4) = C3 convertase >> v C3 & ^ (C3b + C3a)
-
-C3a >> Vasodilation & Recruite opsonizer
-C3b >> Try opsonizaiton first
-
-v C3b & ^ C5 >> v $ & ^ (C5b $ C5a)
-
-C5a >> Vasodilation & Recruite attacker
-C5b >> ^ (C6 to C9) >> Membrane attack complex
-
-(Red blood cell & Phagocyte ) @ C3b
-
-## CGD
-
-(Ig & Complement) >> Opsonization
-
-## Immunosupressant
-
-TCR @ Calcineurin & Calcineurin @ NFAT & NFAT ^ IL2 mRNA & IL2 @ Self IL2R & ^ mTOR & Proliferation
-
-(Cyclosporine | Tacrolimus) @ (Cyclophilin | FKBP) & $ v Calcineurin
-Sirolimus v FKBP & $ v mTOR
-
-(Mycophenolate | Azathioprine) v Proliferation
-
-## Inf
-
-CD4 Naive T .+ (IL1 & IL6 & IL23) => Th17
-Th17 .^ IL17
-
-CD4 Naive T .+ IL12 => Th1
-Th1 .^ (IFg, TNFa, IL2)
-
-Macrophage .+ IFg => MacrophageActivated
-EpithelialCell .+ IFg => Apoptosis
-NK .+ IL12 => NKActivated
-
-## Anti-Inf
-
-CD4 Naive T + IL4 => Th2
-Th2 .^ (IL4, IL10)
-
-Treg .^ (IL10, TGFb)
-
-(IL10, TGFb) ?v Inflammation
-
-IL10 ?v (IL2, IFg, MHC2, Macrophage, Dendritic Cell)
-
-## TNF
-
-(Macrophage, NK, T) .^ TNFa
-
-TNFa ?^ EndothelialAdhesin
-EndothelialAdhesin ?^ WhiteBloodCellTaxis
-
-##
-
-B.IgD
-
-## Ig
-
-IgG.Hinge
-IgD.Hinge
-IgA.Hinge
-
-Phagocyte .& (IgM, IgG) >> Phagocytosis
-
-IgGFC .@ (NK, Phagocyte)
-
-IgG .& C1 >> ComplementClassicalPathway
-
-IgAFC .@ (Neutrophil, Eosinophil, Macrophage)
-
-##
-
-B isotype switching
-B germinal center affinity maturation
-
-Marrow -> Thymocyte -> Subcapsular zone
-T cortex positive selection and medulla negative selection
-Thymic cortical epithelial cell
-
-Central tolerance
-
-Treg -> Periphral tolerance
-
-##
-
-Marrow -> Mature B -> Peripheral tissue & Lymphnode -> Activate -> IgM -> Go to lymphoid follicle and meet T -> CD40R .+ CD40L (CD154) & (T cytokines (2, 4, 5, 6, and IFg) modulate) -> Germinal center -> Memory, Heavy chain isotype switching
-
-C1 .@ IgM
-C1 CLEAVES C4 and C2.
-
-ALternative pathway: small amont of C3 auto C3a and C3b, but inactivated by self cell.
-
-##
-
-Granulocyte.CD15
-
-NK.CD16
-Neu.CD16
-Mac.CD16
-
-CD16 .@ FC (low affinity)
-
-MatureB.(CD19, CD20, CD21)
-
-## Serum sickness = T3H
-
-(C3a, C5a) rec (Macrophage, Neutrohil) make more permiable too
-
-##
-
-Mastcell .^ IL5
-IL5 ^ IgA swithc
-
-##
-
-RANTES recruites T, eosino, basohik. but NOT neutorhil
-
-## iga
-
-PolymericImmunoglobulinReceptor .@ IgA => Secretory IgA
-
 ## paroxysmal nocturnal hemolglobinuia
 
 RBC @ GPI @ (CD55 & CD59) v Complement deposition
@@ -536,3 +387,14 @@ Hypochlorous acid, HClO
 
 Protease
 Collagenase
+FasL @ FasR >> FasR trimerization >> DeathDomain ^ (Caspase 8 & 10) >> ^ (Caspase 3 & 6) $ ^ >> Apoptosis
+
+## Immunosupressant
+
+TCR @ Calcineurin & Calcineurin @ NFAT & NFAT ^ IL2 mRNA & IL2 @ Self IL2R & ^ mTOR & Proliferation
+
+(Cyclosporine | Tacrolimus) @ (Cyclophilin | FKBP) & $ v Calcineurin
+Sirolimus v FKBP & $ v mTOR
+
+(Mycophenolate | Azathioprine) v Proliferation
+PolymericImmunoglobulinReceptor .@ IgA => Secretory IgA

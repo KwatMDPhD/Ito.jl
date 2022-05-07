@@ -18,6 +18,8 @@ struct CD8Cascade end
 
 struct CD14 end
 
+struct CD15 end
+
 struct Mac1 end
 
 struct LFA1 end
@@ -61,6 +63,12 @@ struct PD1Cascade end
 struct PDL1 end
 
 struct CR1 end
+
+struct FasR end
+
+struct FasL end
+
+struct FasRCascade end
 
 # ================================================================================================
 
@@ -138,33 +146,61 @@ struct FCRCascade end
 
 # ================================================================================================
 
+struct IgMFC end
+
 struct IgM
 
-    fc::FC
+    igmfc::IgMFC
 
 end
+
+struct IgMFCR end
 
 struct IgSwitchCascade end
 
+struct IgEFC end
+
 struct IgE
 
-    fc::FC
+    igefc::IgEFC
 
 end
 
-struct IgER end
+struct IgEFCR end
 
-struct IgERCascade end
+struct IgEFCRCascade end
+
+struct Hinge end
+
+struct IgGFC end
 
 struct IgG
 
-    fc::FC
+    iggfc::IgGFC
+
+    hinge::Hinge
 
 end
 
-struct IgA end
+struct IgGFCR end
 
-struct IgD end
+struct IgAFC end
+
+struct IgA
+
+    hinge::Hinge
+
+    igafc::IgAFC
+
+end
+
+struct IgAFCR end
+
+struct IgD
+
+    hinge::Hinge
+
+end
 
 struct IgComplex end
 
@@ -188,6 +224,18 @@ struct ICAM1 end
 
 # ================================================================================================
 
+struct C1 end
+
+struct C1Complex end
+
+struct C1ComplexLike end
+
+struct C2 end
+
+struct C4 end
+
+struct C3Convertase end
+
 struct C3 end
 
 struct C3a end
@@ -196,13 +244,15 @@ struct C3b end
 
 struct C4a end
 
+struct C5 end
+
 struct C5a end
 
 struct C5b end
 
-struct OpsonizationComplex end
-
 struct C5Cascade end
+
+struct OpsonizationComplex end
 
 struct MembraneAttackComplex end
 
@@ -271,6 +321,8 @@ struct MajorBasicProtein end
 struct RNaseL end
 
 struct ProteinKinaseR end
+
+struct LymphotoxinBeta end
 
 # ================================================================================================
 

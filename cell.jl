@@ -19,11 +19,19 @@ struct Platelet end
 
 struct Neutrophil
 
+    cd15::CD15
+
+    cd16::CD16
+
     collagenase::Collagenase
 
     myeloperoxidase::Myeloperoxidase
 
-    fcr::FCR
+    igafcr::IgAFCR
+
+    iggfcr::IgGFCR
+
+    igmfcr::IgMFCR
 
     cd18::CD18
 
@@ -35,17 +43,28 @@ struct Neutrophil
 
 end
 
-struct Eosinophil end
+struct Eosinophil
+
+    cd15::CD15
+
+    igafcr::IgAFCR
+
+end
 
 struct Basophil
 
-    iger::IgER
+    cd15::CD15
+
+    igefcr::IgEFCR
 
 end
 
 struct MastCell
 
-    iger::IgER
+    cd15::CD15
+
+    igefcr::IgEFCR
+
 end
 
 struct Monocyte
@@ -58,7 +77,13 @@ end
 
 struct Macrophage
 
-    fcr::FCR
+    cd16::CD16
+
+    igafcr::IgAFCR
+
+    iggfcr::IgGFCR
+
+    igmfcr::IgMFCR
 
     cd80::CD80
 
@@ -85,7 +110,9 @@ struct MultinucleatedGiantCell end
 # ================================================================================================
 struct NaturalKiller
 
-    fcr::FCR
+    cd16::CD16
+
+    iggfcr::IgGFCR
 
     perforin::Perforin
 
@@ -99,6 +126,8 @@ end
 struct TCell
 
     cd7::CD7
+
+    fasr::FasR
 
 end
 
@@ -178,6 +207,9 @@ struct MemoryB
 end
 
 # ================================================================================================
+
+struct EpithelialCell end
+
 struct EndothelialCell
 
     eselecting::ESelectin
@@ -190,6 +222,7 @@ struct EndothelialCell
 
 end
 
+
 struct Keratinocyte end
 
 struct TumorCell
@@ -200,5 +233,8 @@ struct TumorCell
 
 end
 
+
 # ================================================================================================
 APC = Union{Macrophage}
+
+struct Phagocyte end
