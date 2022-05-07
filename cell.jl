@@ -7,13 +7,29 @@ struct Cell
 
 end
 
-struct HSC end
+struct HSC
+
+    cd45::CD45
+
+end
 
 struct RedBloodCell
 
     cr1::CR1
 
     gpi::GPI
+
+end
+
+struct Leukocyte
+
+    cr1::CR1
+
+end
+
+struct Myelocyte
+
+    myeloperoxidase::Myeloperoxidase
 
 end
 
@@ -63,6 +79,8 @@ end
 
 struct MastCell
 
+    cd3::CD3
+
     cd15::CD15
 
     igefcr::IgEFCR
@@ -101,9 +119,15 @@ struct Macrophage
 
 end
 
-struct DendriticCell end
+struct DendriticCell
+
+    s100::S100
+
+end
 
 struct ActivatedMacrophage end
+
+struct ReticuloendothelialPhagocyte end
 
 struct EpithelioidMacrophage end
 
@@ -210,7 +234,63 @@ end
 
 # ================================================================================================
 
-struct EpithelialCell end
+struct NeuralCrestCell
+
+    s100::S100
+
+    sox10::SOX10
+
+end
+
+struct SchwannCell
+
+    s100::S100
+
+end
+
+struct Melanocyte
+
+    s100::S100
+
+    hmb45::HMB45
+
+end
+
+struct LangerhansCell
+
+    s100::S100
+
+end
+
+struct EpithelialCell
+
+    cytokeratin::Cytokeratin
+
+end
+
+struct Myocyte
+
+    desmin::Desmin
+
+end
+
+struct Neuron
+
+    neurofilament::Neurofilament
+
+end
+
+struct MesenchymalCell
+
+    vimentin::Vimentin
+
+end
+
+struct GliaCell
+
+    gfap::GFAP
+
+end
 
 struct EndothelialCell
 
@@ -224,6 +304,13 @@ struct EndothelialCell
 
 end
 
+struct NeuroendocrineCell
+
+    chromogranin::ChromograninA
+
+    synaptophysin::Synaptophysin
+
+end
 
 struct Keratinocyte end
 
@@ -258,4 +345,8 @@ end
 
 struct Granulocyte end
 
-struct Lymphocyte end
+struct Lymphocyte
+
+    cd44::CD44
+
+end

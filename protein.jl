@@ -70,6 +70,8 @@ struct GPI end
 
 struct FasR end
 
+CD95 = FasR
+
 struct FasL end
 
 struct FasRCascade end
@@ -222,6 +224,8 @@ struct ESelectin end
 struct PSelectin end
 
 struct PECAM1 end
+
+CD31 = PECAM1
 
 struct ICAM1 end
 

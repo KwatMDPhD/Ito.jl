@@ -1,6 +1,8 @@
 # ================================================================================================
 # Cell, Protein >> Phenotype
 
+Macrophage * _125DihydroxyvitaminD
+
 [HSC, IL3] * Proliferation
 
 [HSC, GMCSF] * [Granulocyte, Monocyte]
@@ -36,6 +38,10 @@
 [Basophil, C5a] * Migration
 
 [Macrophage, C3a] * Migration
+
+[Macrophage, PDGF] * [IL1, TNFa, TGFb, VEGF]
+
+[Fibroblast, TGFb] * [VEGF, FGF, ExtracellularMatrix, Collagen, EpithelialCell]
 
 [Macrophage, C5a] * Migration
 
@@ -75,6 +81,10 @@ TumorCell * [CTLA4, IL10]
 
 [Keratinocyte, IL17] * Proliferation
 
+IL2 * "Decrease" * IL17
+
+IL4 * "Decrease" * IL17
+
 [Keratinocyte, IL22] * Proliferation
 
 # ================================================================================================
@@ -84,11 +94,17 @@ TumorCell * [CTLA4, IL10]
 
 [CXCR2, IL8] * Migration
 
-Histamine * [VascularPermeability, T1H]
+ACE * "Decrease" Bradykinin
+
+Histamine * [VascularPermeability, T1H, Bronchoconstriction]
+
+Histamine * Catecholamine
 
 C3a * Vasodilation
 
 C5a * Vasodilation
+
+[CD55, CD59] * "Decrease" * C3
 
 Bradykinin * [VascularPermeability, Vasodilation, BronchialConstriction, Pain]
 
@@ -148,6 +164,8 @@ IgComplex * T3H
 
 [BCell, IL5, IL13] * PlasmaCell
 
+[Th0, FOXP3] * TReg
+
 [PlasmaCell, CD40Cascasde, IL2, IL4, IL5, IL6, IFNg] * MemoryB
 
 # ================================================================================================
@@ -171,7 +189,9 @@ IgComplex * T3H
 
 NaturalKiller * [Perforin, Granzyme]
 
-[CD8T, CD8Cascade, CD28Cascade] * [Perforin, Granzyme]
+[CD8T, CD8Cascade, CD28Cascade] * CytotoxicT
+
+CytotoxicT * [Perforin, Granzyme]
 
 [CD8T, IL12] * IFNg
 
@@ -183,7 +203,13 @@ NaturalKiller * [Perforin, Granzyme]
 
 [Macrophage, CD40Cascasde] * [CD80, CD86, MHC2]
 
-[MastCell, IgEFCRCascade] * [Histamine, Tryptase, ArachidonicAcid]
+[MastCell, IgEFCRCascade] * [Histamine, Tryptase, ArachidonicAcid, Prostaglandin]
+
+[MastCell, Epinephrine] * "Decrease" * Degranulation
+
+[MastCell, Vancomycin] * Degranulation
+
+[MastCell, Opioid] * Degranulation
 
 [MastCell, C3a] * Histamine
 
@@ -191,9 +217,11 @@ NaturalKiller * [Perforin, Granzyme]
 
 [MastCell, C5a] * Histamine
 
-[PlasmaCell, IgSwitchCascade, IL5] * [IgG, IgA]
+[PlasmaCell, IgSwitchCascade, IL5] * [IgA]
 
-[PlasmaCell, IgSwitchCascade, IL13] * [IgG, IgE]
+[PlasmaCell, IgSwitchCascade, IL13] * [IgE]
+
+[PlasmaCell, IgSwitchCascade, IL4] * [IgE]
 
 [Keratinocyte, IFNg] * [IL1, TNFa]
 
@@ -224,10 +252,13 @@ Th2 * [IL3, IL4, IL5, IL10, IL13]
 
 Th17 * [IL17, IL22]
 
-TReg * [TGFb, IL10]
+TReg * [TGFb, IL10, CTLA4]
+
+TGFb * [FOXP3]
+
+TGFb * "Decrease" * PlasmaCell
 
 PlasmaCell * IgM
-
 
 # ================================================================================================
 # Protein >> Protein
@@ -262,6 +293,10 @@ PlasmaCell * IgM
 
 IL10 * "Decrease" * [IFNg, IL2, IL3, TNFa, Macrophage, DendriticCell, MHC2]
 
+[Fibroblast, IL10] * Proliferation
+
+Glucose * "Decrease" * [IL10] 
+
 TGFb * "Decrease" * [IL1, TNFa]
 
 [CD40, CD40L] * CD40Cascasde
@@ -279,6 +314,8 @@ IgG * IgComplex
 IFNg * [MHC1, MHC2]
 
 [C3, Capsule] * [C3a, C3b]
+
+[IgG, Capsule] * Nothing
 
 [C3b, Bacterium] * OpsonizationComplex
 
@@ -329,3 +366,47 @@ IgG * "Decrease" * Platyhelminth
 IgG * "Decrease" * Nematode
 
 MajorBasicProtein * AntibodyDependentCellularCytotoxicity
+
+# ====
+
+[AdenylCyclase, ATP] * cAMP
+
+cAMP * ProteinKinaseA
+
+Beta1AdrenergicReceptor * Gs
+
+VEGF * Angiogenesis
+
+FGF2 * [Angiogenesis, Lymphogenesis]
+
+[Cytokeratin, Desmosome] * Nothing
+
+[Cytokeratin, Hemidesmosome] * Nothing
+
+Platelet * [PDGF, TGFb]
+
+PDGF * [Vasoconstriction, PlateletAggregation, Angiogenesis]
+
+[Fibroblast, PDGF] * Proliferation
+
+[SmoothMuscleCell, PDGF] * Proliferation
+
+Platelet * FibrinClot
+
+TNFa * Cachexia
+
+TNFa * [Anorexia, Metabolism, Fever, CRP, Fibrinogen, Globulin]
+
+[Fibrinogen, Globulin] * ErythrocyteSedimentation
+
+IL1 * Fever
+
+IL6 * Cachexia
+
+[CD44, Lymphnode] * Nothing
+
+[Neutrophil, GCSF] * Migration
+
+Proopiomelanocortin * [BetaEndorphin, ACTH, MSH]
+Opioid * [Enkephalin, Endorphin, Dynorphin]
+[Morphine, OpioidReceptorMu] * Nothing
