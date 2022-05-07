@@ -28,8 +28,6 @@ struct Vasoconstriction end
 
 struct ExtravascularHemolysis end
 
-struct Vasoconstriction end
-
 struct BronchialConstriction end
 
 struct Decrease end
@@ -41,3 +39,5 @@ struct DecreasedTranscription end
 struct DecreasedTranslation end
 
 struct Pain end
+
+struct AntibodyDependentCellularCytotoxicity end

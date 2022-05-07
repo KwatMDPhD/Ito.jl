@@ -13,6 +13,8 @@ struct RedBloodCell
 
     cr1::CR1
 
+    gpi::GPI
+
 end
 
 struct Platelet end
@@ -20,8 +22,6 @@ struct Platelet end
 struct Neutrophil
 
     cd15::CD15
-
-    cd16::CD16
 
     collagenase::Collagenase
 
@@ -48,6 +48,8 @@ struct Eosinophil
     cd15::CD15
 
     igafcr::IgAFCR
+
+    mhc2::MHC2
 
 end
 
@@ -77,7 +79,7 @@ end
 
 struct Macrophage
 
-    cd16::CD16
+    cd14::CD14
 
     igafcr::IgAFCR
 
@@ -110,8 +112,6 @@ struct MultinucleatedGiantCell end
 # ================================================================================================
 struct NaturalKiller
 
-    cd16::CD16
-
     iggfcr::IgGFCR
 
     perforin::Perforin
@@ -119,6 +119,8 @@ struct NaturalKiller
     granzyme::Granzyme
 
     pd1::PD1
+
+    cd56::CD56
 
 end
 
@@ -235,6 +237,25 @@ end
 
 
 # ================================================================================================
-APC = Union{Macrophage}
 
-struct Phagocyte end
+struct APC
+
+    macrophage::Macrophage
+
+    bcell::BCell
+
+end
+
+struct Phagocyte
+
+    neutrophil::Neutrophil
+
+    eosinophil::Eosinophil
+
+    macrophage::Macrophage
+
+end
+
+struct Granulocyte end
+
+struct Lymphocyte end

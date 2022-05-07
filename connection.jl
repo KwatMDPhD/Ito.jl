@@ -3,11 +3,17 @@
 
 [HSC, IL3] * Proliferation
 
+[HSC, GMCSF] * [Granulocyte, Monocyte]
+
 [HSC, IL5] * Eosinophil
 
 [EpithelialCell, IFNg] * Apoptosis
 
 [Neutrophil, C3a] * Migration
+
+[Neutrophil, TNFa] * Proliferation
+
+[Neutrophil, IL17] * [Proliferation, Migration]
 
 [Neutrophil, C5a] * Migration
 
@@ -45,9 +51,15 @@ ActivatedMacrophage * Granuloma
 
 [CD8T, IL2, IFNg] * Proliferation
 
+[Lymphocyte, IL2] * Proliferation
+
 [Th2, IL2, IFNg] * Decrease
 
 [NaturalKiller, IL2] * Proliferation
+
+[NaturalKiller, IL12, IFNg] * Proliferation
+
+[NaturalKiller, IgGFCRCascade] * AntibodyDependentCellularCytotoxicity
 
 [TReg, IL2] * Proliferation
 
@@ -64,10 +76,6 @@ TumorCell * [CTLA4, IL10]
 [Keratinocyte, IL17] * Proliferation
 
 [Keratinocyte, IL22] * Proliferation
-
-[Phagocyte, C3b] * Phagocytosis
-
-[Phagocyte, FCRCascade] * Phagocytosis
 
 # ================================================================================================
 # Protein >> Phenotype
@@ -131,7 +139,12 @@ IgComplex * T3H
 
 [Macrophage, IL1] * ActivatedMacrophage
 
+[Th0, IL1] * Th1
+
+[Th0, IL1] * Th2
+
 [Th0, CD4CD28Cascade, IL4] * Th2
+[Th2, IL5] * Proliferation
 
 [BCell, IL5, IL13] * PlasmaCell
 
@@ -193,9 +206,9 @@ Platelet * [ThromboxaneA2]
 
 Neutrophil * Elastase
 
-Eosinophil * MajorBasicProtein
+[Eosinophil, IL5] * [LtC4, LtD4, LtE4, MajorBasicProtein]
 
-MastCell * IL5
+Eosinophil * [LtC4, LtD4, LtE4, IL5]
 
 Macrophage * [IL8, IL12, IL23, IFNg, TNFa, TGFb, Elastase]
 
@@ -245,7 +258,7 @@ PlasmaCell * IgM
 
 [CD4Cascade, CD28Cascade] * CD4CD28Cascade
 
-[FCR, FC] * FCRCascade
+[IgGFCR, IgGFC] * IgGFCRCascade
 
 IL10 * "Decrease" * [IFNg, IL2, IL3, TNFa, Macrophage, DendriticCell, MHC2]
 
@@ -265,6 +278,8 @@ IgG * IgComplex
 
 IFNg * [MHC1, MHC2]
 
+[C3, Capsule] * [C3a, C3b]
+
 [C3b, Bacterium] * OpsonizationComplex
 
 [C3b, CR1] * ExtravascularHemolysis
@@ -280,6 +295,8 @@ C5b * C5Cascade
 Lysozyme * "Decrease" * Peptidoglycan
 
 [CD14, Lipopolysacharide] * Nothing
+
+[IgGFCR, IgGFC] * IgGFCRCascade
 
 [Phospholipid, PhospholipaseA2] * ArachidonicAcid
 
@@ -298,3 +315,17 @@ _5HPETE * _5HETE
 ArachidonicAcid * [LtB4, LtC4, LtD4, LtE4]
 
 [FasR, FasL] * FasRCascade
+
+IgA * "Decrease" * Protozoan
+
+IgA * "Decrease" * Platyhelminth
+
+IgA * "Decrease" * Nematode
+
+IgG * "Decrease" * Protozoan
+
+IgG * "Decrease" * Platyhelminth
+
+IgG * "Decrease" * Nematode
+
+MajorBasicProtein * AntibodyDependentCellularCytotoxicity

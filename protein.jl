@@ -50,6 +50,8 @@ struct CD40L end
 
 struct CD40Cascasde end
 
+struct CD56 end
+
 struct CD80 end
 
 struct CD86 end
@@ -63,6 +65,8 @@ struct PD1Cascade end
 struct PDL1 end
 
 struct CR1 end
+
+struct GPI end
 
 struct FasR end
 
@@ -138,11 +142,6 @@ struct MHC2Antigen end
 
 struct FC end
 
-struct FCR end
-
-CD16 = FCR
-
-struct FCRCascade end
 
 # ================================================================================================
 
@@ -183,6 +182,10 @@ struct IgG
 end
 
 struct IgGFCR end
+
+struct IgGFCRCascade end
+
+CD16 = IgGFCR
 
 struct IgAFC end
 
@@ -271,6 +274,8 @@ struct TNFa end
 struct TGFb end
 
 # ================================================================================================
+
+struct GMCSF end
 
 struct IL1 end
 
