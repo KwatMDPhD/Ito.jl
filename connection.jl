@@ -295,7 +295,7 @@ IL10 * "Decrease" * [IFNg, IL2, IL3, TNFa, Macrophage, DendriticCell, MHC2]
 
 [Fibroblast, IL10] * Proliferation
 
-Glucose * "Decrease" * [IL10] 
+Glucose * "Decrease" * [IL10]
 
 TGFb * "Decrease" * [IL1, TNFa]
 
