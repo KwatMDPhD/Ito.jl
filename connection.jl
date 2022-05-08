@@ -1,11 +1,6 @@
 # ================================================================================================
 # Cell, Protein >> Phenotype
 
-Macrophage * _125DihydroxyvitaminD
-
-[HSC, IL3] * Proliferation
-
-[HSC, GMCSF] * [Granulocyte, Monocyte]
 
 [HSC, IL5] * Eosinophil
 
@@ -410,3 +405,11 @@ IL6 * Cachexia
 Proopiomelanocortin * [BetaEndorphin, ACTH, MSH]
 Opioid * [Enkephalin, Endorphin, Dynorphin]
 [Morphine, OpioidReceptorMu] * Nothing
+[HSC, IL3] * Proliferation
+
+[HSC, GMCSF] * [Granulocyte; Monocyte]
+APC = [Macrophage, DendriticCell]
+
+Phagocyte = [Neutrophil, Macrophage, DendriticCell]
+
+Macrophage * _125DihydroxyvitaminD

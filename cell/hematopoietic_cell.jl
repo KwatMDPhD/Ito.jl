@@ -9,11 +9,3 @@ struct Leukocyte
     cr1::CR1
 
 end
-
-struct APC
-
-end
-
-struct Phagocyte
-
-end

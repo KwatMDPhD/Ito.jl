@@ -41,5 +41,3 @@ struct TumorCell
     pdl1::PDL1
 
 end
-
-struct Lymphnode end

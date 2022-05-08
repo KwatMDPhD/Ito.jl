@@ -4,6 +4,8 @@ struct Myelocyte
 
 end
 
+struct Platelet end
+
 struct RedBloodCell
 
     cr1::CR1
@@ -12,4 +14,12 @@ struct RedBloodCell
 
 end
 
-struct Platelet end
+struct MastCell
+
+    cd3::CD3
+
+    cd15::CD15
+
+    igefcr::IgEFCR
+
+end

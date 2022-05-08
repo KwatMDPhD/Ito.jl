@@ -59,3 +59,5 @@ struct DecreasedTranslation end
 struct Pain end
 
 struct AntibodyDependentCellularCytotoxicity end
+
+struct Lymphnode end

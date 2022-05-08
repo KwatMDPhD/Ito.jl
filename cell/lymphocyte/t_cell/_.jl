@@ -1,4 +1,3 @@
-
 struct TCell
 
     cd7::CD7

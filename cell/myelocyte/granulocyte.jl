@@ -1,5 +1,3 @@
-struct Granulocyte end
-
 struct Neutrophil
 
     cd15::CD15
@@ -42,12 +40,4 @@ struct Basophil
 
 end
 
-struct MastCell
-
-    cd3::CD3
-
-    cd15::CD15
-
-    igefcr::IgEFCR
-
-end
+Granulocyte = [Neutrophil, Eosinophil, Basophil]

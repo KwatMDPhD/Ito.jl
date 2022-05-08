@@ -1,3 +1,9 @@
+struct Lymphocyte
+
+    cd44::CD44
+
+end
+
 struct NaturalKiller
 
     iggfcr::IgGFCR
@@ -9,11 +15,5 @@ struct NaturalKiller
     pd1::PD1
 
     cd56::CD56
-
-end
-
-struct Lymphocyte
-
-    cd44::CD44
 
 end

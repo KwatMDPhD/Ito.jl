@@ -38,15 +38,15 @@ struct CD28Cascade end
 
 struct CD4CD28Cascade end
 
+struct CD40L end
+
 struct CD40 end
+
+struct CD40Cascasde end
 
 struct CD44 end
 
 struct CD45 end
-
-struct CD40L end
-
-struct CD40Cascasde end
 
 struct CD55 end
 

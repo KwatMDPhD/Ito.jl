@@ -1,17 +1,17 @@
-struct DSRNA end
+struct Hemidesmosome end
+
+struct Desmosome end
 
 struct cAMP end
 
-struct ATP end
+struct ProteinKinaseR end
 
 struct RNaseL end
-
-struct ProteinKinaseR end
 
 struct SOX10 end
 
 struct FOXP3 end
 
-struct Hemidesmosome end
+struct dsRNA end
 
-struct Desmosome end
+struct ATP end
