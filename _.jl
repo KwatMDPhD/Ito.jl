@@ -4,6 +4,8 @@ include_in_order(joinpath(@__DIR__, "metabolite"))
 
 include_in_order(joinpath(@__DIR__, "protein"))
 
+include_in_order(joinpath(@__DIR__, "pathogen"))
+
 include_in_order(joinpath(@__DIR__, "medication"))
 
 include_in_order(joinpath(@__DIR__, "cell"))
