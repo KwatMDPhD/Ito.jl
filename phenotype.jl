@@ -1,3 +1,21 @@
+struct ErythrocyteSedimentation end
+
+struct Fever end
+
+struct Metabolism end
+
+struct Anorexia end
+
+struct Cachexia end
+
+struct Lymphogenesis end
+
+struct Angiogenesis end
+
+struct Degranulation end
+
+struct Bronchoconstriction end
+
 struct Apoptosis end
 
 struct Proliferation end

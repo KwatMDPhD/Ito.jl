@@ -1,3 +1,73 @@
+struct OpioidReceptorMu end
+
+struct Dynorphin end
+
+struct Endorphin end
+
+struct Enkephalin end
+
+struct Proopiomelanocortin end
+
+struct MSH end
+
+struct ACTH end
+
+struct BetaEndorphin end
+
+struct GCSF end
+
+struct Globulin end
+
+struct Fibrinogen end
+
+struct CRP end
+
+struct FibrinClot end
+
+struct FGF2 end
+
+struct Gs end
+
+struct Beta1AdrenergicReceptor end
+
+struct ProteinKinaseA end
+
+struct AdenylCyclase end
+
+struct FOXP3 end
+
+struct ACE end
+
+struct Collagen end
+
+struct ExtracellularMatrix end
+
+struct FGF end
+
+struct VEGF end
+
+struct PDGF end
+
+struct Synaptophysin end
+
+struct ChromograninA end
+
+struct GFAP end
+
+struct Vimentin end
+
+struct Neurofilament end
+
+struct Desmin end
+
+struct Cytokeratin end
+
+struct HMB45 end
+
+struct SOX10 end
+
+struct S100 end
+
 # ================================================================================================
 
 struct DSRNA end
@@ -46,11 +116,19 @@ struct CD4CD28Cascade end
 
 struct CD40 end
 
+struct CD44 end
+
+struct CD45 end
+
 struct CD40L end
 
 struct CD40Cascasde end
 
+struct CD55 end
+
 struct CD56 end
+
+struct CD59 end
 
 struct CD80 end
 

@@ -94,7 +94,7 @@ IL4 * "Decrease" * IL17
 
 [CXCR2, IL8] * Migration
 
-ACE * "Decrease" Bradykinin
+ACE * "Decrease" * Bradykinin
 
 Histamine * [VascularPermeability, T1H, Bronchoconstriction]
 

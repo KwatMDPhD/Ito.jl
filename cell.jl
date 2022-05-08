@@ -1,3 +1,15 @@
+struct Lymphnode end
+
+struct SmoothMuscleCell end
+
+struct Hemidesmosome end
+
+struct Desmosome end
+
+struct CytotoxicT end
+
+struct Fibroblast end
+
 # ================================================================================================
 struct Cell
 
