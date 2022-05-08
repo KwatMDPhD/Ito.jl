@@ -1,1 +1,0 @@
-struct Virus end

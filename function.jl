@@ -170,9 +170,9 @@ IgComplex * T3H
 
 [Cell, IFNa, IFNb] * [RNaseL, ProteinKinaseR]
 
-[DSRNA, RNaseL] * DecreasedTranscription
+[dsRNA, RNaseL] * DecreasedTranscription
 
-[DSRNA, ProteinKinaseR] * DecreasedTranslation
+[dsRNA, ProteinKinaseR] * DecreasedTranslation
 
 [Neutrophil, Antigen] * EndosomeAntigen
 

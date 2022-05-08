@@ -1,11 +1,13 @@
-include("include_in_order.jl")
+include("metabolite.jl")
 
-include_in_order(joinpath(@__DIR__, "metabolite"))
+include("protein.jl")
 
-include_in_order(joinpath(@__DIR__, "protein"))
+include("pathogen.jl")
 
-include_in_order(joinpath(@__DIR__, "pathogen"))
+include("medication.jl")
 
-include_in_order(joinpath(@__DIR__, "medication"))
+include("cell.jl")
 
-include_in_order(joinpath(@__DIR__, "cell"))
+include("phenotype.jl")
+
+include("function.jl")
