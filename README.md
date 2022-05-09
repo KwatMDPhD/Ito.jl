@@ -2,6 +2,10 @@
 
 :spider_web:
 
+"How is my immune system doing?” This is a simple question, but there is no satisfying way to answer it. The current approaches are case-by-case (based on context-specific markers like Ig-dsDNA), over simplifying (based on general markers like IL6), or noisy (based on all-encompassing omics analytics).
+
+We aim to answer this by 1) designing a Julia-based program Kumo.jl for linking cells, proteins, and other molecules; 2) using Kumo to link practical immune elements into an intuitive network; 3) using the network topology to regularize omics matrix factorizations and delineate immune patterns; and 4) using the patterns to summarize a person's immune system.
+
 EGF => mitogen for epithelial cells
 GH + Hepatocyte ==> IGF1 (somatomedin C) ==> Cell growth
 FGFs ==> recruite ==> macrophage, fibroblasts, endothelial cells
