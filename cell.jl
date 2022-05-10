@@ -74,7 +74,7 @@ struct Neuron
 
 end
 
-struct GliaCell
+struct GlialCell
 
     gfap::GFAP
 
@@ -307,13 +307,13 @@ struct TCell
 
 end
 
-struct NaiveT
+struct Th0
 
     cd4::CD4
 
 end
 
-Th0 = NaiveT
+NaiveT = Th0
 
 # ================================================================================================
 #

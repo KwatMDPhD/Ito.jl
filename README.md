@@ -8,7 +8,9 @@
 
 We aim to answer this by 1) designing a Julia-based program Kumo.jl for linking cells, proteins, and other molecules; 2) using Kumo to link practical immune elements into an intuitive network; 3) using the network topology to regularize omics matrix factorizations and delineate immune patterns; and 4) using the patterns to summarize a person's immune system.
 
-## Finding
+## Design principles
+
+Edges mean the same thing: reaction.
 
 There is no such thing as a T cell; it is an abstract concept.
 

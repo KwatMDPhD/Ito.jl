@@ -1,7 +1,6 @@
 # ================================================================================================
 # Cell, Protein >> Phenotype
 
-
 [HSC, IL5] * Eosinophil
 
 [EpithelialCell, IFNg] * Apoptosis
