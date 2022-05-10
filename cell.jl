@@ -392,3 +392,11 @@ end
 struct PlasmaCell end
 
 struct MemoryB end
+
+# ================================================================================================
+#
+# ================================================================================================
+
+Phagocyte = [Neutrophil, Macrophage, DendriticCell]
+
+APC = [Macrophage, DendriticCell]
