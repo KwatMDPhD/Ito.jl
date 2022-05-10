@@ -10,4 +10,4 @@ include("cell.jl")
 
 include("phenotype.jl")
 
-include("function.jl")
+include("function2.jl")
