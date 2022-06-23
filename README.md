@@ -1,6 +1,6 @@
-# Immunology.ito
+# Ito.jl
 
-:spider_web:
+"Ito" :spider_web:
 
 ## Abstract
 
